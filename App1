@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body id="tela">
+<button onclick="iniciar()" style="margin:235.5px auto 235.5px; display:block;">Iniciar</button>
+<script>
+
+    function iniciar(){
+    	setInterval(corAleatoria, 40)
+    	function corAleatoria(){
+          var r = Math.floor(Math.random() * 255)
+          var g = Math.floor(Math.random() * 255)
+          var b = Math.floor(Math.random() * 255 )
+          var objeto = document.getElementById('tela')
+          objeto.style.background = `rgb(${r},${g},${b})`
+    	}
+    }
+    
+
+</script>
+</body>
+</html>
